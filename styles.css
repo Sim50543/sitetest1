@@ -77,6 +77,12 @@ img {
 
 .text-with-image {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .text-with-image {
+        flex-direction: column;
+        text-align: center;
+    }
 }
