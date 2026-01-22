@@ -86,3 +86,60 @@ img {
         text-align: center;
     }
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.text-with-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+}
+
+
+@media (max-width: 992px) {
+    h4 {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    .text-with-image {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-with-image img {
+        max-width: 100%;
+    }
+
+ 
+    .tier-label {
+        width: 50px;
+        font-size: 14px;
+    }
+
+    .item img {
+        max-width: 72px;
+        max-height: 72px;
+    }
+}
+
+@media (max-width: 576px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
